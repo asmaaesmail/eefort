@@ -1,0 +1,569 @@
+::-moz-selection {
+    background: #489BFF;
+    color: #fff
+}
+
+::selection {
+    background: #489BFF;
+    color: #fff
+}
+body{
+    color: #B0B1B1;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.form-control,
+.owl-carousel .owl-next,
+.owl-carousel .owl-next i,
+.owl-carousel .owl-prev,
+.owl-carousel .owl-prev i,
+.scaleimg,
+a,
+button,
+h4,
+i,
+img,
+li,
+p,
+span,
+ul.nav > li:after {
+    transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out
+}
+.all-sections{
+    padding: 50px 0;
+}
+.width-80{
+    width: 80%;
+    margin: 0 auto;
+}
+/************************************************ Start Profile .HTML ************************************/
+.profile{
+    background-image: url(../img/profile-bg.png);
+    background-size: 29% 68%;
+    background-position: left -134px bottom 0;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.profile:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.8);
+}
+
+/*********************** Profile Form ************************/
+/************* Start Profile Image ***************/
+.profile-pic {
+    margin: 0 auto;
+    display: table;
+}
+.profile .profile-pic p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+p.email-r {
+    color: #AEAEAE;
+    font-weight: 100 !important;
+}
+.images-upload-block a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.profile .upload-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #C0C0C0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile .upload-img span , .profile .upload-img b{
+    position: absolute;
+    margin: auto;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 22px;
+    color: #e4e4e4;
+    cursor: pointer;
+}
+
+.profile .upload-img span i {
+    color: #e4e4e4
+}
+
+.profile .upload-img b {
+    font-size: 20px;
+    color: #e4e4e4;
+}
+
+.profile .upload-img input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    display: none
+}
+
+.profile .profile-pic .images-upload-block {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    z-index: 9;
+    margin: 0 auto 20px auto;
+}
+
+.profile .profile-pic .images-upload-block img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover
+}
+/******************************** Edit Profile Image *************************************************/
+.uploaded-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    border-radius: 50%;
+    display: block;
+    background-color: #C0C0C0;
+    text-align: center;
+}
+.uploaded-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.images-upload-block .close {
+    top: -8px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: #626262;
+    z-index: 9999;
+    opacity: 1;
+    color: #fff;
+    box-shadow: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px; 
+    padding: 0;
+    text-shadow: none;
+    float: none;
+}
+/************* End Profile Image ***************/
+
+
+.form2 {
+    margin: 25px auto 0 auto;
+    display: table;
+    position: relative;
+    z-index: 99;
+}
+
+.form2 .form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+.form2 label {
+    color: #AEAEAE;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.form2 .form-control {
+    border: 0;
+    border-bottom: 1px solid #cac5c5;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 16px;
+    height: 60px;
+}
+
+.form2 .form-control:focus ~ .focus-border:before {
+    display: none
+}
+
+.form2 .form-control ~ .focus-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #489BFF;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+.form2 .form-control ~ .focus-border:after {
+    top: auto;
+    bottom: 0
+}
+
+.form2 .form-control ~ .focus-border i:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #003467;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s
+}
+
+.form2 .form-control ~ .focus-border i:after {
+    left: auto;
+    right: 0
+}
+
+.form2 .form-control:focus ~ .focus-border:after {
+    left: 0;
+    width: 100%;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+.form2 .form-control:focus ~ .focus-border i:after,
+.form2 .form-control:focus ~ .focus-border i:before {
+    top: 0;
+    height: 100%;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s
+}
+
+.form2 .form-control:focus {
+    border-color: transparent;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    outline: 0 !important
+}
+
+.edit{
+    height: 45px;
+    font-size: 21px;
+    float: left;
+    background-color: #489BFF;
+    color: #fff;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transform: rotate(-90deg);
+}
+.edit:hover , .edit:focus{
+    color: #489BFF;
+    background-color: #fff;
+    border-color: #489BFF;
+}
+/******* Button Hover ******************/
+.btn-round{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 170px;
+    height: 50px;
+    max-width: 250px;
+    margin: 1rem auto;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+    color: #fff;
+    background-color: #489BFF;
+    border-radius: 30px;
+    line-height: 50px
+}
+.btn-round:before , .btn-round:after{
+    z-index: -1;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 50px solid #252528;
+    
+}
+.btn-round:before{
+    right: -50px;
+    border-right: 50px solid transparent;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+.btn-round:after{
+    left: -50px;
+    border-left: 50px solid transparent;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+.btn-round:hover {
+    color: #fff;
+    background-color: transparent
+}
+.btn-round:hover:before{
+    -webkit-transform: translateX(-40%);
+    transform: translateX(-40%);
+}
+.btn-round:hover:after{
+    -webkit-transform: translateX(40%);
+    transform: translateX(40%);
+}
+.btn-round span{
+    position: absolute;
+    z-index: 9;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+/************************************************ End Profile .HTML  ************************************/
+
+
+
+
+/************************************************ Start Orders .HTML  ************************************/
+.orders{
+    background-image: url('../img/orders-bg.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/****** Nav Pills ***********/
+.nav-pills {
+    padding: 0;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.nav-pills li {
+    float: none;
+    text-align: center;
+}
+.nav-pills li a.active{
+    border-bottom: 3px solid #000000;
+}
+.nav-pills > li > a {
+    border-radius: 0;
+    color: #B0B1B1;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: bold;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover, .nav-pills > li > a:focus, .nav-pills > li > a:hover {
+    color: #000000;
+    background-color: transparent;
+}
+/********* Nav Content *********/
+.tab-content {
+    padding: 60px 0 0 0;
+}
+/************ Order Details *************/
+.order-tab{
+    position: relative;
+    margin: 0 0 10px 0;
+}
+.order1{
+   -webkit-box-shadow: 6px 10px 19px 0px rgba(241,243,243,1);
+    -moz-box-shadow: 6px 10px 19px 0px rgba(241,243,243,1);
+    box-shadow: 6px 10px 19px 0px rgba(241,243,243,1); 
+    border: 1px solid rgba(241, 243, 243, .7);
+    border-radius: 15px;
+    padding: 10px 12px;
+    display: flex;
+    position: relative;
+    color: #B0B1B1;
+    z-index: 9;
+    background-color: #fff;
+}
+.order1:hover , .order1:focus{
+    -webkit-box-shadow: 0px 10px 19px 0px rgba(72, 155, 255, .3);
+    -moz-box-shadow: 0px 10px 19px 0px rgba(72, 155, 255, .3);
+    box-shadow: 0px 10px 19px 0px rgba(72, 155, 255, .3); 
+    color: #B0B1B1;
+/*    border-color: #489BFF;*/
+}
+.icon-r{
+    background-color: #489BFF;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -40px;
+    top: calc(50% - 40px);
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    text-align: left;
+    font-size: 24px;
+    padding: 0 11px;
+    z-index: -1;
+}
+.order-img{
+    width: 140px;
+    float: right;
+    padding: 15px;
+    height: 120px;
+}
+.order-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.order-body{
+    width: calc(100% - 140px);
+    float: left;
+    text-align: right;
+    position: relative;
+    padding: 0 0 40px 0;
+}
+.order-body h3{
+    font-weight: bold;
+    color: #000000;
+    font-size: 17px;
+    margin: 0 0 10px 0;
+}
+.order-body p{
+    margin: 0;
+}
+.order-btm{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+.price-p{
+    color: #489BFF;
+    width: 50%;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+.price{
+    font-weight: bold;
+    padding: 0 2px;
+}
+.order-prov{
+    font-weight: bold;
+    color: #000000;
+    font-size: 15px;
+    display: inline-block;
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin: 0;
+}
+
+/********************************/
+/************************************************ End Orders .HTML  ************************************/
+
+
+
+
+
+
+/****************************************************************************************************************************************************************** Media *********************************************************************************/
+
+@media (max-width:1024px) {
+        
+    }
+
+
+@media (max-width:991px) {
+    /************************************************ Start Orders .HTML  ************************************/
+    .nav-pills {
+        width: 100%;
+    }
+    /************************************************ End Orders .HTML  ************************************/
+}
+
+
+@media (max-width:767px) {
+    /************* Start Profile Image ***************/
+    .profile .profile-pic .images-upload-block {
+        width: 110px;
+        height: 110px;
+    }
+    .width-80{
+        width: 100%;
+    }
+    /************* End Profile Image ***************/
+
+    
+    /************************************************ Start Orders .HTML  ************************************/
+    .order-img {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        padding: 4px;
+        height: 60px;
+    }
+    .order1{
+        display: block;
+    }
+    .order-body {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .icon-r {
+        top: -40px;
+        left: 20px;
+        text-align: left;
+        height: 100px;
+        transform: rotate(90deg);
+        padding: 11px 9px;
+    }
+    .icon-r svg{
+        transform: rotate(-90deg);
+    }
+    /************************************************ End Orders .HTML  ************************************/
+
+}
+
+
+@media (max-width:480px) {
+    
+    }
